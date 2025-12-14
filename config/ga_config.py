@@ -1,9 +1,10 @@
-# population_size
-#
-# generations
-#
-# mutation_rate
-#
-# bounds
-#
-# tournament_size
+POPULATION_SIZE = 50
+
+LOWER_BOUND = -30
+UPPER_BOUND = 30
+
+GENERATION_COUNT = 25
+MUTATION_RATE = 0.01
+CROSSORATE_RATE = 0.01
+
+TOURNAMENT_SIZE = 20

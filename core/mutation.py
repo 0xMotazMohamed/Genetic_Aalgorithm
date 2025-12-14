@@ -14,7 +14,7 @@ def mutate(individual: tuple, mutation_rate: float, low: float, high: float) -> 
     if mutation_probability < mutation_rate:
         individual = list(individual)
         mutation_amount = random.uniform(-1, 1)
-        for i in len(individual):
+        for i in range(len(individual)):
             individual[i] *= mutation_amount
             individual[i] = max(min(individual[i], high), low)
         individual = tuple(individual)

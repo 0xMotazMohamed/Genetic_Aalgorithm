@@ -1,16 +1,8 @@
-# load config
-# choose experiment
-# run algorithm
-# get history
-# visualize
-# save results
+from config.ga_config import POPULATION_SIZE, LOWER_BOUND, UPPER_BOUND, GENERATION_COUNT, MUTATION_RATE,CROSSORATE_RATE ,TOURNAMENT_SIZE
+from core.algorithm import genetic_algorithm
 
-import config.ga_config as config
-from experiments.quadratic_u_shape import run_experiment
+m1 , m2 =genetic_algorithm(POPULATION_SIZE,GENERATION_COUNT,LOWER_BOUND,UPPER_BOUND,MUTATION_RATE,CROSSORATE_RATE,TOURNAMENT_SIZE)
 
-def main():
-    best_solution = run_experiment(config)
-    print("Best solution", best_solution)
+print(m1)
+print(m2)
 
-if __name__ == "__main__":
-    main()

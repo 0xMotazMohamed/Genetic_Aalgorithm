@@ -13,7 +13,7 @@ def arithmetic_crossover(parent1: tuple, parent2: tuple, crossover_rate: float) 
     if crossover_probability < crossover_rate:
         mixing_ratio = random.random()
 
-        child1, child2 = []
+        child1, child2 = [],[]
 
         for coefficient_parent1, coefficient_parent2 in zip(parent1, parent2):
             child1.append(mixing_ratio * coefficient_parent1 + (1 - mixing_ratio) * coefficient_parent2)
