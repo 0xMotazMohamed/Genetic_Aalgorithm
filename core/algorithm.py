@@ -6,7 +6,7 @@ from core.selection import tournament_selection
 
 import pandas as pd
 
-def genetic_algorithm(population_size,generations,lower_bound,upper_bound,mutation_rate,crossover_rate,tournament_size):
+def genetic_algorithm(population_size,generations,lower_bound,upper_bound,mutation_rate,crossover_rate, tournament_size:int = 3):
     # History
     all_populations = []
     best_performance = []
