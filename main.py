@@ -80,7 +80,7 @@ else:
         # ---------------------------
         # graph fitness & generations
         with col1_graph:
-            st.caption(f"fitness & generations graph", sttext_alignment="center")
+            st.caption(f"fitness & generations graph", text_alignment="center")
             st.line_chart(fitness_generations)  # graph fitness & generations
 
         a, b, c = [], [], []
