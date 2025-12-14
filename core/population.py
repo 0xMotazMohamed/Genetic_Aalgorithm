@@ -1,3 +1,6 @@
+import random
+
+
 def create_initial_population(size: int, low: float, high: float) -> list:
     """
     Create the initial population of individuals.
@@ -7,4 +10,12 @@ def create_initial_population(size: int, low: float, high: float) -> list:
     high: upper bound of gene values
     return: list of individuals
     """
-    pass
+
+    population = []
+    for _ in range(size):
+        population.append((
+            random.uniform(low, high),
+            random.uniform(low, high),
+            random.uniform(low, high)
+            ))
+    return population
