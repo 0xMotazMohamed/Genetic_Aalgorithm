@@ -117,7 +117,7 @@ else:
             ).interactive()
             chart_inf[2].caption(f"Final Generation {st.session_state["generations"]} Population Solutions for ({chart_inf[0]})",
                                    text_alignment="center")
-            chart_inf[2].altair_chart(chart, use_container_width=True)  # Final Generation Population Solutions scatter chart
+            chart_inf[2].altair_chart(chart, width='content')  # Final Generation Population Solutions scatter chart
 
         # ---------------------------------
         # Parameter Values Over Generations
