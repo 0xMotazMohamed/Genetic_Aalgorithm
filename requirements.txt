@@ -1,5 +1,5 @@
 numpy 
 pandas
-prettytable 
-matplotlib
 streamlit
+matplotlib
+pip install streamlit[charts]
