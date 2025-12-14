@@ -2,4 +2,4 @@ numpy
 pandas
 streamlit
 matplotlib
-pip install streamlit[charts]
+streamlit[charts]
